@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freq0097 - Setup Profile</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="setup-container">
+        <div class="setup-card">
+            <div class="header">
+                <h1>Welcome to Freq0097!</h1>
+                <p>Complete your profile setup</p>
+            </div>
+
+            <div class="profile-info">
+                <div class="info-row">
+                    <label>Civil ID:</label>
+                    <span id="civilId">Loading...</span>
+                </div>
+
+                <div class="info-row">
+                    <label>Gmail Account:</label>
+                    <span id="civilEmail">Loading...</span>
+                </div>
+            </div>
+
+            <div class="name-section">
+                <h3>Customize Your Display Name</h3>
+                <form id="nameForm" class="name-form">
+                    <div class="input-group">
+                        <label for="civilName">Display Name:</label>
+                        <input type="text" id="civilName" name="civilName" required>
+                        <small>This name will be visible to other users</small>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="btn btn-primary">
+                            Confirm Name
+                        </button>
+                    </div>
+                </form>
+
+                <div class="message" id="message" style="display: none;">
+                    <p id="messageText"></p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>Complete this step to access your Freq0097 dashboard</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/civil_new.js"></script>
+</body>
+</html>

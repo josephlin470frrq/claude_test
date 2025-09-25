@@ -1,0 +1,65 @@
+Build a PostgreSQL database for freq0097 web site; 
+CREATE SCHEMA freq0097;
+CREATE table freq0097.freq_civil (
+civil_id char(17) PRIMARY KEY, 
+civil_name char (17),
+civil_email varchar(50),
+gmail_bind boolean DEFAULT false,
+main_root_freq char(2),
+sub_root_freq char(2),
+third_root_freq char(2),
+character_id char(8),
+hope_freq_id char(2), 
+soul_id char(2),
+main_rf_task_01 varchar(4),
+civil_luv_balance INT DEFAULT 0,
+civil_point_balance INT DEFAULT 0,
+civil_creator boolean DEFAULT false,
+civil_particip boolean DEFAULT false,
+civil_volunteer boolean DEFAULT false,
+civil_undertake boolean DEFAULT false,
+
+);
+CREATE table freq0097.civil_role (
+civil_id char(17), 
+role_type char(2),
+role_date timestamp,
+role_action char(1),
+); 
+
+CREATE table freq0097.root_freq (
+root_freq_id char(2) PRIMARY KEY,
+root_freq_spell char(16),
+root_freq_audio bytea,
+);
+
+CREATE table freq0097.root_freq_ui (
+root_freq_id char(2),
+ui_lang char(2),
+root_freq_name varchar(40),
+root_freq_detailed varchar(100),
+root_freq_audio bytea,
+);
+
+CREATE table freq0097.soul_type (
+soul_id char(2) PRIMARY KEY,
+soul_id_card bytea,
+);
+
+CREATE table freq0097.soul_type_ui (
+soul_id char(2),
+ui_lang char(2),
+soul_id_name varchar(40),
+soul_id_core varchar(100),
+soul_id_mapping varchar(100),
+soul_id_app varchar(100),
+);
+
+
+
+
+
+
+
+
+

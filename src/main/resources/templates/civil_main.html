@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freq0097 - Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="main-container">
+        <header class="header">
+            <div class="header-content">
+                <h1>Freq0097 Dashboard</h1>
+                <div class="user-actions">
+                    <span id="userName">Loading...</span>
+                    <button id="logoutBtn" class="btn btn-logout">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard">
+            <div class="profile-section">
+                <h2>Profile Information</h2>
+                <div class="profile-grid">
+                    <div class="profile-item">
+                        <label>Civil ID:</label>
+                        <span id="civilId">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Display Name:</label>
+                        <span id="civilName">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Email:</label>
+                        <span id="civilEmail">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Gmail Binding:</label>
+                        <span id="gmailBind">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Character ID:</label>
+                        <span id="characterId">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Hope Frequency ID:</label>
+                        <span id="hopeFreqId">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Luv Balance:</label>
+                        <span id="luvBalance">-</span>
+                    </div>
+                    <div class="profile-item">
+                        <label>Point Balance:</label>
+                        <span id="pointBalance">-</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="frequency-section">
+                <h2>Root Frequency Information</h2>
+
+                <div class="freq-card">
+                    <h3>Main Root Frequency</h3>
+                    <div class="freq-details" id="mainRootFreq">
+                        <div class="freq-item">
+                            <label>ID:</label>
+                            <span id="mainFreqId">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Spell:</label>
+                            <span id="mainFreqSpell">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Name:</label>
+                            <span id="mainFreqName">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Description:</label>
+                            <span id="mainFreqDetailed">-</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="freq-card">
+                    <h3>Sub Root Frequency</h3>
+                    <div class="freq-details" id="subRootFreq">
+                        <div class="freq-item">
+                            <label>ID:</label>
+                            <span id="subFreqId">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Spell:</label>
+                            <span id="subFreqSpell">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Name:</label>
+                            <span id="subFreqName">-</span>
+                        </div>
+                        <div class="freq-item">
+                            <label>Description:</label>
+                            <span id="subFreqDetailed">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="soul-section">
+                <h2>Soul Type Information</h2>
+                <div class="soul-card">
+                    <div class="soul-details" id="soulType">
+                        <div class="soul-item">
+                            <label>Soul ID:</label>
+                            <span id="soulId">-</span>
+                        </div>
+                        <div class="soul-item">
+                            <label>Name:</label>
+                            <span id="soulName">-</span>
+                        </div>
+                        <div class="soul-item">
+                            <label>Core:</label>
+                            <span id="soulCore">-</span>
+                        </div>
+                        <div class="soul-item">
+                            <label>Mapping:</label>
+                            <span id="soulMapping">-</span>
+                        </div>
+                        <div class="soul-item">
+                            <label>Application:</label>
+                            <span id="soulApp">-</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="role-flags">
+                <h2>Role Status</h2>
+                <div class="flags-grid">
+                    <div class="flag-item">
+                        <label>Creator:</label>
+                        <span id="civilCreator">-</span>
+                    </div>
+                    <div class="flag-item">
+                        <label>Participant:</label>
+                        <span id="civilParticip">-</span>
+                    </div>
+                    <div class="flag-item">
+                        <label>Volunteer:</label>
+                        <span id="civilVolunteer">-</span>
+                    </div>
+                    <div class="flag-item">
+                        <label>Undertaker:</label>
+                        <span id="civilUndertake">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="session-timeout" id="sessionTimeout" style="display: none;">
+            <p>Session will expire in <span id="timeoutCounter">120</span> seconds due to inactivity.</p>
+            <button id="extendSession" class="btn btn-primary">Extend Session</button>
+        </div>
+    </div>
+
+    <script src="/js/civil_main.js"></script>
+</body>
+</html>
